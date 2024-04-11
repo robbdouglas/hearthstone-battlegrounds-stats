@@ -3,7 +3,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import "./db-connect.js";
-// import gamesRouter from "./routes/gamesRoutes.js";
+import gamesRouter from "./routes/gamesRoutes.js";
 
 const app = express();
 dotenv.config();
@@ -12,7 +12,7 @@ app.use(express.json());
 
 // ______________ROUTES______________
 
-// app.use("/games", gamesRouter);
+app.use("/games", gamesRouter);
 
 //______________PORT & LISTEN______________
 const PORT = process.env.PORT;
