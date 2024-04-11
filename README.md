@@ -8,6 +8,7 @@
 - Stats: Winrate, average placement, plays per day, hero winrate, tribe winrate, quest winrate
 - Sorting: by date, number of plays, winrate
 - Backend: Login mechanism, MongoDB for data storage, CRUD operations for data (Create with new game form, read with stats page, update and delete with edit game component)
+- Flavor of the day: Show current best tribe, based on winrate (min 5 games played)
 
 ## Description
 
