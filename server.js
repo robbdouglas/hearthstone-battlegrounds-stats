@@ -2,7 +2,7 @@
 
 import express from "express";
 import dotenv from "dotenv";
-// import "./db-connect.js";
+import "./db-connect.js";
 // import gamesRouter from "./routes/gamesRoutes.js";
 
 const app = express();
@@ -20,3 +20,4 @@ const PORT = process.env.PORT;
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
+
