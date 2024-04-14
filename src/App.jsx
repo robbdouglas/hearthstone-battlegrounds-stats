@@ -6,6 +6,9 @@ import Register from "./components/Register"; // Importiere die Register-Kompone
 import Login from "./components/Login";
 import RegisterSuccess from "./components/RegisterSuccess"; // Importiere die RegisterSuccess-Komponente
 import Dashboard from "./components/Dashboard";
+import NewGameForm from "./components/NewGameForm";
+import Stats from "./components/Stats";
+import AccountSettings from "./components/AccountSettings";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         {/* Hinzugefügt */}
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/new-game-form" element={<NewGameForm />} />
+        <Route path="/stats" element={<Stats />} />
+        <Route path="/account-settings" element={<AccountSettings />} />
         <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
     </Router>

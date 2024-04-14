@@ -1,0 +1,15 @@
+/* Dashboard.css */
+
+.ng-stats-div {
+  display: flex;
+  justify-content: center;
+}
+
+.ng-stats-div * {
+  margin: 0 10px 0 10px;
+}
+
+.home-button, .account-settings-btn {
+  margin-top: 20px;
+  width: 100%;
+}
