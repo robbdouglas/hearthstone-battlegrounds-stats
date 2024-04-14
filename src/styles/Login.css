@@ -46,7 +46,13 @@
   form button:hover {
     border-color: #646cff;
   }
+
+  .home-button-div {
+    margin-top: 20px;
+  }
   
   .home-button {
     margin-top: 20px;
+    text-align: center;
+    width: 100%;
   }
