@@ -10,6 +10,8 @@ const gamesSchema = new Schema({
   placement: {
     type: Number,
     required: true,
+    min: 1,
+    max: 8,
   },
   hero: {
     type: String,
