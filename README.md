@@ -1,5 +1,12 @@
 # Hearthstone Battlegrounds Stats
 
+## To Do Monday & Tuesday (15.04.24 & 16.04.24)
+
+- Create a new game form
+- Create stats page
+- Create account settings page
+- Add login-register-mechanism in backend
+
 ## V. 1.0.0 Goals
 
 - Landing Page with Login mechanism
