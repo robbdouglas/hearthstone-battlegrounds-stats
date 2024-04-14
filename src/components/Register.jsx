@@ -43,8 +43,12 @@ function Register() {
             placeholder="Enter password again..."
             required
           />
+
           <button type="submit">Register</button>
         </form>
+        <Link to="/" className="home-button button">
+          Back to Home
+        </Link>
       </div>
     </div>
   );
