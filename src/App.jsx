@@ -5,6 +5,7 @@ import LandingPage from "./components/LandingPage";
 import Register from "./components/Register"; // Importiere die Register-Komponente
 import Login from "./components/Login";
 import RegisterSuccess from "./components/RegisterSuccess"; // Importiere die RegisterSuccess-Komponente
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
@@ -12,8 +13,11 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/register" element={<Register />} /> {/* Hinzugefügt */}
-        <Route path="/register/success" element={<RegisterSuccess />} /> {/* Hinzugefügt */}
+        <Route path="/register/success" element={<RegisterSuccess />} />{" "}
+        {/* Hinzugefügt */}
         <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
     </Router>
   );
