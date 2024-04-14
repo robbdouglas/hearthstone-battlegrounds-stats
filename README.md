@@ -3,7 +3,7 @@
 ## V. 1.0.0 Goals
 
 - Landing Page with Login mechanism
-- Dash Board with "Welcome", "New Game", "Stats", "Account Settings" and "Logout"
+- Dashboard with "Welcome", "New Game", "Stats", "Account Settings" and "Logout"
 - New Game: Name by login name, placement, hero, tribe and quest, date
 - Stats: Winrate, average placement, plays per day, hero winrate, tribe winrate, quest winrate
 - Sorting: by date, number of plays, winrate
