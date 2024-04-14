@@ -10,6 +10,7 @@ function LandingPage() {
     <div className="landing-page-box">
       <div className="welcome-div">
         {/* <img src={logoImg} alt="Battlegrounds Stats Logo" className="logo" /> */}
+        <h2>Welcome to</h2>
         <h1>Hearthstone Battlegrounds Stats</h1>
         <h2>Do you want to create a new account or do you want to sign in?</h2>
       </div>
