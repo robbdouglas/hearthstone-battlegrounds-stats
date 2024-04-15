@@ -18,9 +18,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/register" element={<Register />} /> {/* Hinzugefügt */}
+        <Route path="/register" element={<Register />} /> 
         <Route path="/register/success" element={<RegisterSuccess />} />{" "}
-        {/* Hinzugefügt */}
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/new-game-form" element={<NewGameForm />} />
@@ -28,7 +27,7 @@ function App() {
         <Route path="/account-settings" element={<AccountSettings />} />
         <Route path="/all-games" element={<AllGames />} />
         <Route path="/player-stats" element={<PlayerStats />} />
-        <Route path="stats-details" element={<StatsDetails />} /> {/* Hinzugefügt */}
+        <Route path="stats-details" element={<StatsDetails />} /> 
         <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
     </Router>
