@@ -1,6 +1,9 @@
 import { Users } from "../models/usersModel.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const register = async (req, res) => {
   try {
@@ -27,18 +30,18 @@ const register = async (req, res) => {
 };
 
 const login = async (req, res) => {
-  const { userName, password } = req.body;
+  const { username, password } = req.body;
   try {
-    const foundUser = await Users.findOne({ userName });
+    const foundUser = await Users.findOne({ username });
     if (!foundUser) {
       return res.status(404).json({ message: "Wrong username or password!" });
     }
-    const passwordsMatched = await bcrypt.compare(password, foundUser.password);
+    const passwordsMatched = await bcrypt.compare(password, foundUser.hashedPassword);
     if (!passwordsMatched) {
       return res.status(401).json({ message: "Wrong username or password!" });
     }
     const user = foundUser.toObject();
-    delete user.password;
+    delete user.hashedPassword;
     const payload = { userID: user._id };
     const token = jwt.sign(payload, process.env.SECRETKEY, {
       expiresIn: "1h",
