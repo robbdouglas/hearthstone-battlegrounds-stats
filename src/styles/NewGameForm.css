@@ -1,0 +1,43 @@
+/* NewGameForm.css */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  align-self: center;
+  font-weight: bold;
+}
+
+input {
+  padding: 0.5rem;
+  margin-left: 20px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.input-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.player-name-container label {
+  text-align: left;
+}
+
+select {
+  margin: 1em;
+}
+
+.player-name-container {
+  display: flex;
+  flex-direction: column;
+}
