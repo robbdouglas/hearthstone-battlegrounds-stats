@@ -1,0 +1,17 @@
+.settings-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-container button {
+  margin-right: 10px;
+}
+
+.delete-acc {
+  background-color: rgba(255, 0, 0, 0.472);
+}
+
+.delete-acc-h2 {
+  color: rgba(255, 0, 0, 0.472);
+}
