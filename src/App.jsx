@@ -36,7 +36,7 @@ function App() {
         <Route path="/change-password" element={<ChangePassword />} />
         <Route path="/change-email" element={<ChangeEmail />} />
         <Route path="/delete-account" element={<DeleteAccount />} />
-        <Route path="*" element={<h1>Not Found</h1>} />
+        <Route path="*" element={<h1>ERROR 404: Not Found</h1>} />
       </Routes>
     </Router>
   );
