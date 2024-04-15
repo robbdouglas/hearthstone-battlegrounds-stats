@@ -6,6 +6,9 @@
 - Create stats page
 - Create account settings page
 - Add login-register-mechanism in backend
+- Add backend to new game form (POST)
+- Add backend to stats page (GET)
+- deploy 
 
 ## V. 1.0.0 Goals
 
