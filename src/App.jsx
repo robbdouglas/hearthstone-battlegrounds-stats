@@ -2,16 +2,16 @@
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
-import Register from "./components/Register"; // Importiere die Register-Komponente
+import Register from "./components/Register";
 import Login from "./components/Login";
-import RegisterSuccess from "./components/RegisterSuccess"; // Importiere die RegisterSuccess-Komponente
+import RegisterSuccess from "./components/RegisterSuccess"; 
 import Dashboard from "./components/Dashboard";
 import NewGameForm from "./components/NewGameForm";
 import Stats from "./components/Stats";
 import AccountSettings from "./components/AccountSettings";
 import AllGames from "./components/AllGames";
 import PlayerStats from "./components/PlayerStats";
-import StatsDetails from "./components/StatsDetails"; // Importiere die StatsDetails-Komponente
+import StatsDetails from "./components/StatsDetails"; 
 
 function App() {
   return (
