@@ -42,15 +42,3 @@
   cursor: pointer;
   transition: border-color 0.25s;
 }
-
-form button:hover {
-  border-color: #646cff;
-}
-
-.home-button-div {
-  margin-top: 20px;
-}
-
-.home-button {
-  margin-top: 20px;
-}

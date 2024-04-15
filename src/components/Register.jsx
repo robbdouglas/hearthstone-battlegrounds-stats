@@ -47,8 +47,8 @@ function Register() {
           <button type="submit">Register</button>
         </form>
         <div className="home-button-div">
-          <Link to="/" className="home-button button">
-            Back to Home
+          <Link to="/" className="home-button">
+            <button>Back to home</button>
           </Link>
         </div>
       </div>

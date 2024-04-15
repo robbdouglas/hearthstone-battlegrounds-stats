@@ -15,14 +15,14 @@ function LandingPage() {
         <h2>Do you want to create a new account or do you want to sign in?</h2>
       </div>
       <div className="button-div">
-        <Link to="/register" className="button">
-          Register
+        <Link to="/register">
+          <button>Register</button>
         </Link>
-        <Link to="/login" className="button">
-          Login
+        <Link to="/login">
+          <button>Login</button>
         </Link>
-        <Link to="/dashboard" className="button">
-          Dashboard
+        <Link to="/dashboard">
+          <button>Dashboard</button>
         </Link>
       </div>
     </div>

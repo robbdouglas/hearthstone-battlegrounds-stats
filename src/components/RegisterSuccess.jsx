@@ -8,7 +8,7 @@ function RegisterSuccess() {
       <p>You can now log in with your new account.</p>
 
       <Link to="/" className="button">
-        Back to Home
+        <button>Back to home</button>
       </Link>
     </div>
   );
