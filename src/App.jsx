@@ -9,6 +9,9 @@ import Dashboard from "./components/Dashboard";
 import NewGameForm from "./components/NewGameForm";
 import Stats from "./components/Stats";
 import AccountSettings from "./components/AccountSettings";
+import AllGames from "./components/AllGames";
+import PlayerStats from "./components/PlayerStats";
+import StatsDetails from "./components/StatsDetails"; // Importiere die StatsDetails-Komponente
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
         <Route path="/new-game-form" element={<NewGameForm />} />
         <Route path="/stats" element={<Stats />} />
         <Route path="/account-settings" element={<AccountSettings />} />
+        <Route path="/all-games" element={<AllGames />} />
+        <Route path="/player-stats" element={<PlayerStats />} />
+        <Route path="stats-details" element={<StatsDetails />} /> {/* Hinzugefügt */}
         <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
     </Router>

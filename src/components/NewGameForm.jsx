@@ -93,7 +93,7 @@ function NewGameForm() {
         </div>
       </form>
       <Link to="/dashboard">
-        <button className="back-to-home">Back to home</button>
+        <button className="back-to-home">Back to dashboard</button>
       </Link>
     </div>
   );

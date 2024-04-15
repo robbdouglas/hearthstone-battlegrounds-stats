@@ -1,0 +1,19 @@
+.last-five-games-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stats-buttons-box,
+.back-buttons-container {
+  text-align: center;
+}
+
+.stats-buttons-box button {
+  margin-right: 20px;
+}
+
+.back-buttons-container {
+    margin-top: 20px;
+}
