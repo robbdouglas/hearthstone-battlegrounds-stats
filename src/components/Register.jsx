@@ -19,14 +19,6 @@ function Register() {
             placeholder="Enter username..."
             required
           />
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter email address..."
-            required
-          />
           <label htmlFor="password">Password:</label>
           <input
             type="password"

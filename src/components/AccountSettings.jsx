@@ -14,9 +14,6 @@ function AccountSettings() {
         <Link to="/change-password">
           <button>Change password</button>
         </Link>
-        <Link to="/change-email">
-          <button>Change email address</button>
-        </Link>
         <Link to="/delete-account">
           <button className="delete-acc">DELETE ACCOUNT</button>
         </Link>
