@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../styles/Login.css";
 
 function Login() {
+  const navigate = useNavigate(); 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
@@ -21,7 +22,7 @@ function Login() {
       );
       const token = response.data.token;
       localStorage.setItem("token", token);
-      window.location.href = "/dashboard";
+      navigate("/dashboard");
     } catch (error) {
       setError("Username or password is incorrect!");
     }
