@@ -1,14 +1,17 @@
 # Hearthstone Battlegrounds Stats
 
-## To Do Monday & Tuesday (15.04.24 & 16.04.24)
+## Remaining tasks
 
-- Create a new game form
-- Create stats page
-- Create account settings page
-- Add login-register-mechanism in backend
+
 - Add backend to new game form (POST)
 - Add backend to stats page (GET)
+- Add Update and Delete functionality to edit game
+- Overall stats: Filter and sorting functions
+- Protected routes (only logged in users can access dashboard)
+- Refreshing the website: username must not be lost
+- Style (NewGameForm and Stats)
 - deploy 
+- Convert to React Native
 
 ## V. 1.0.0 Goals
 
