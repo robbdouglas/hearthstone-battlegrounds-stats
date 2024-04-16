@@ -6,13 +6,10 @@ import axios from "axios";
 import "../styles/Dashboard.css";
 import { useUsersContext } from "../contexts/UsersContext";
 
-const activeUser = "TEST_USER";
-
 function Dashboard() {
   const navigate = useNavigate();
 
   const { user } = useUsersContext();
-  console.log("user:", user);
 
   const handleLogout = async () => {
     try {
@@ -30,7 +27,7 @@ function Dashboard() {
     <div>
       <div className="dashboard-welcome">
         <h1>Dashboard</h1>
-        <h2>Welcome {activeUser}!</h2>
+        <h2>Welcome {user.username}!</h2>
       </div>
       <div className="ng-stats-div">
         <Link to="/new-game-form">

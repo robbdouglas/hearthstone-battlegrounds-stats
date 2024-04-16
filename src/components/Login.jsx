@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../styles/Login.css";
+import { useUsersContext } from "../contexts/UsersContext";
 
 function Login() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const { setUser } = useUsersContext();
   const [error, setError] = useState(null);
 
   const handleLogin = async (e) => {
@@ -20,8 +22,9 @@ function Login() {
         },
         { withCredentials: true }
       );
-      const token = response.data.token;
-      localStorage.setItem("token", token);
+      console.log("response:", response);
+      const loggedUser = response.data.user;
+      setUser({ ...loggedUser, isLoggedIn: true });
       navigate("/dashboard");
     } catch (error) {
       setError("Username or password is incorrect!");

@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 
 export const initialUser = {
   _id: "",
-  userName: "",
+  username: "",
   isLoggedIn: false,
 };
 
