@@ -4,11 +4,15 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../styles/Dashboard.css";
+import { useUsersContext } from "../contexts/UsersContext";
 
 const activeUser = "TEST_USER";
 
 function Dashboard() {
   const navigate = useNavigate();
+
+  const { user } = useUsersContext();
+  console.log("user:", user);
 
   const handleLogout = async () => {
     try {
