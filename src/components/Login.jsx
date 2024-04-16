@@ -11,10 +11,14 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/users/login", {
-        username,
-        password,
-      });
+      const response = await axios.post(
+        "http://localhost:3000/users/login",
+        {
+          username,
+          password,
+        },
+        { withCredentials: true }
+      );
       const token = response.data.token;
       localStorage.setItem("token", token);
       window.location.href = "/dashboard";
