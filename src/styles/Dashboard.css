@@ -9,7 +9,13 @@
   margin: 0 10px 0 10px;
 }
 
-.home-button, .account-settings-btn {
+.home-button,
+.account-settings-btn {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.logout-btn {
   margin-top: 20px;
   width: 100%;
 }
