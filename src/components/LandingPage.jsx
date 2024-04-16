@@ -21,9 +21,9 @@ function LandingPage() {
         <Link to="/login">
           <button>Login</button>
         </Link>
-        <Link to="/dashboard">
+        {/* <Link to="/dashboard">
           <button>Dashboard</button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
