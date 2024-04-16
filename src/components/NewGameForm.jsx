@@ -21,21 +21,9 @@ function NewGameForm() {
       <h1>New Game Form</h1>
       <form>
         <div className="label-input-container">
-          <div className="player-name-container">
-            <div className="input-line">
-              <label htmlFor="player-name">Player:</label>
-              <input
-                type="text"
-                id="player-name"
-                name="player-name"
-                placeholder="Enter your name..."
-              />
-            </div>
-          </div>
           <div className="placement-container">
             <div className="input-line">
               <label htmlFor="placement">Placement:</label>
-
               <input
                 type="number"
                 id="placement"

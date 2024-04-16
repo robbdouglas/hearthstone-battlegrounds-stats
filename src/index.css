@@ -31,15 +31,25 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* background-image: url(./assets/images/cardback-wallpaper.jpeg);
+  background-image: url(./assets/images/12ccc.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  color: black;
+  font-weight: 350;
+}
+
+label {
+  color: black;
 }
 
 button {
