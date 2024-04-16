@@ -1,10 +1,27 @@
+// Dashboard.jsx
+
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 import "../styles/Dashboard.css";
 
 const activeUser = "TEST_USER";
 
 function Dashboard() {
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    try {
+      await axios.get("http://localhost:3000/users/logout", {
+        withCredentials: true,
+      });
+      localStorage.removeItem("token");
+      navigate("/");
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
+  };
+
   return (
     <div>
       <div className="dashboard-welcome">
@@ -25,9 +42,9 @@ function Dashboard() {
         </Link>
       </div>
       <div>
-        <Link to="/">
-          <button className="home-button">Logout</button>
-        </Link>
+        <button className="logout-btn" onClick={handleLogout}>
+          Logout
+        </button>
       </div>
     </div>
   );

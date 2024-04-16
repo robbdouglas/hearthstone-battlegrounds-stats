@@ -1,3 +1,5 @@
+// usersControllers.js
+
 import { Users } from "../models/usersModel.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
@@ -58,4 +60,12 @@ const login = async (req, res) => {
   }
 };
 
-export { register, login };
+const logout = async (req, res) => {
+  try {
+    res.clearCookie("token").status(200).json({ message: "logout successful" });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+export { register, login, logout };
